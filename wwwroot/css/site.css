@@ -1,0 +1,26 @@
+:root {
+    --blue: #4787d4;
+    --green: #3d7568;
+    --red: #c3545d;
+    --white: #fff;
+    --black: #000;
+}
+
+html {
+  font-size: 14px;
+}
+
+@media (min-width: 768px) {
+  html {
+    font-size: 16px;
+  }
+}
+
+html {
+  position: relative;
+  min-height: 100%;
+}
+
+body {
+  margin-bottom: 60px;
+}
