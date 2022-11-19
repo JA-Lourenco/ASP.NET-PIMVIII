@@ -1,0 +1,51 @@
+﻿@page
+@model AgRealizadoModel
+@{
+    ViewData["Title"] = "Agendamento Realizado";
+}
+
+    <header class="d-flex flex-wrap align-items-center justify-content-center justify-content-md-between py-3 mb-4 border-bottom">
+        <div class="text-center">
+            <img src="../source/images/telemedicinaLogo-removebg.png" asp-append-version="true" alt="logo" width="100" height="100">
+        </div>
+
+        <ul class="nav col-12 col-md-auto mb-2 justify-content-center mb-md-0">
+            <li class="ms-lg-5 navBarLi">
+                <a href="/Home" class="nav-link">
+                <p class="m-0 navBarP">Início</p>
+                </a>
+                </li>
+            <li class="ms-lg-5 navBarLi">
+                <a href="/Agendamento" class="nav-link">
+                <p class="m-0 navBarP">Consultar</p>
+                </a>
+            </li>
+            <li class="ms-lg-5 navBarLi">
+                <a href="/Perfil" class="nav-link">
+                <p class="m-0 navBarP">Perfil</p>
+                </a>
+            </li>
+        </ul>
+    </header>
+    <main>
+        <form action="/AgRealizado" class="row bgConsulta d-flex align-items-center flex-column">
+            <h3 class="text-center" style="color:var(--blue);">Agendamento realizado com sucesso!</h3>
+            <div class="mt-3 m-auto d-flex align-items-center flex-column">
+                <img src="../source/images/concluidoLogo-removebg.png" asp-append-version="true" alt="logo" width="200" height="200">
+
+                <div class="col border p-2 m-3 w-50 cartaoConsulta">
+                    <p class="fw-bold">Data e Hora: 22/11/2022 às 14h15</p>
+                    <p>Médico(a): Doutor Testando Um</p>
+                        <p>CRM: 8888</p>
+                        <p>Especialidade: Infectologia</p>
+                        <p>Paciente: Paciente Teste Júnior</p>
+                    </div>
+                </div>
+        <a href="/Home" class="col w-50 m-5">
+            <span class="btn btn-lg w-100 botaoEntrar">
+                Continuar
+            </span>
+        </a>
+            
+        </form>
+    </main>
