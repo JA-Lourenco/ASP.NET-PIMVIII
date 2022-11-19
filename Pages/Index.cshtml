@@ -4,36 +4,36 @@
     ViewData["Title"] = "Login";
 }
 
-<main class="d-flex flex-column align-items-center w-50 mt-5">
-    <form class ="form-signin w-50">
-        <div class="text-center">
-            <img class="mb-4" src="../source/images/telemedicinaLogo-removebg.png" asp-append-version="true" alt="logo" width="200" height="200">
-        </div>
+<main class="mt-5">
+    <div class="d-flex flex-column align-items-center">
+        <form class ="form-signin w-25" action="/Home">
+            <div class="text-center">
+                <img class="mb-4" src="source/images/telemedicinaLogo-removebg.png" asp-append-version="true" alt="logo" width="200" height="200">
+            </div>
         
-        <h1 class="text-center" style="color:var(--black);">Realize seu login</h1>
+            <h1 class="text-center" style="color:var(--black);">Realize seu login</h1>
 
-        <div class="mt-3">
-            <label for="floatingInput" class="form-label">Usuário</label>
-            <input type="email" class="form-control" id="floatingInput" placeholder="Email ou CPF">
-        </div>
-        <div class="mt-3">
-            <label for="floatingPassword" class="form-label">Senha</label>
-            <input type="password" class="form-control" id="floatingPassword" placeholder="Insira sua senha">
-        </div>
+            <div class="mt-3">
+                <label for="floatingInput" class="form-label">Usuário</label>
+                <input type="email" class="form-control" id="floatingInput" placeholder="Email ou CPF">
+            </div>
+            <div class="mt-3">
+                <label for="floatingPassword" class="form-label">Senha</label>
+                <input type="password" class="form-control" id="floatingPassword" placeholder="Insira sua senha">
+            </div>
 
-        <div class="mt-2">
-            <a href="#" class="text-decoration-none" style="color:var(--blue);">Esqueci minha senha</a>
-        </div>
+            <div class="mt-2">
+                <a href="#" class="text-decoration-none" style="color:var(--blue);">Esqueci minha senha</a>
+            </div>
         
-        <button class="btn btn-lg w-100 mt-5" style="background-color:var(--blue);color:var(--white);" type="submit">
-            <a asp-page="/Home" class="text-decoration-none" style="color:var(--white);">
+            <button class="btn btn-lg w-100 mt-5 botaoEntrar" type="submit">
                 Entrar
-            </a>
-        </button>
-    </form>
-    <div class="d-flex flex-column align-items-center mt-5">
-        <p style="color:var(--green);">Não possui uma conta?</p>
-        <button class="btn btn-md" style="background-color:var(--green);color:var(--white);">Crie uma nova conta</button>
+            </button>
+        </form>
+        <div class="d-flex flex-column align-items-center mt-5">
+            <p style="color:var(--green);">Não possui uma conta?</p>
+            <button class="btn btn-md botaoCriarConta">Crie uma nova conta</button>
+        </div>
     </div>
 </main>
 
