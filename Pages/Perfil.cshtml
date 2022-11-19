@@ -1,0 +1,80 @@
+﻿@page
+@model PerfilModel
+@{
+    ViewData["Title"] = "Meu Perfil";
+}
+
+    <header class="d-flex flex-wrap align-items-center justify-content-center justify-content-md-between py-3 mb-4 border-bottom">
+        <div class="text-center">
+            <img src="../source/images/telemedicinaLogo-removebg.png" asp-append-version="true" alt="logo" width="100" height="100">
+        </div>
+
+        <ul class="nav col-12 col-md-auto mb-2 justify-content-center mb-md-0">
+            <li class="ms-lg-5 navBarLi">
+                <a href="/Home" class="nav-link">
+                <p class="m-0 navBarP">Início</p>
+                </a>
+                </li>
+            <li class="ms-lg-5 navBarLi">
+                <a href="/Agendamento" class="nav-link">
+                <p class="m-0 navBarP">Consultar</p>
+                </a>
+            </li>
+            <li class="ms-lg-5 navBarLi">
+                <a href="/Perfil" class="nav-link">
+                <p class="m-0 navBarP">Perfil</p>
+                </a>
+            </li>
+        </ul>
+    </header>
+<main>
+    <div class="album">
+        <div class="container">
+            <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 g-3">
+                <div class="col">
+                    <div class="card shadow-sm">
+                        <div class="card-body">
+                            <h5 class="card-text text-center">Gerenciar meus dados</p>
+                            <div class="d-flex justify-content-between align-items-center">
+                                <a href="/DadosPessoais" class="w-100 btn btn-lg botaoEntrar">Dados Pessoais</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col">
+                    <div class="card shadow-sm">
+                        <div class="card-body">
+                            <h5 class="card-text text-center">Visualizar histórico de atendimentos</p>
+                            <div class="d-flex justify-content-between align-items-center">
+                                <a href="#" class="w-100 btn btn-lg botaoEntrar">Histórico de Atendimentos</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col">
+                    <div class="card shadow-sm">
+                        <div class="card-body">
+                            <h5 class="card-text text-center">Gerenciar a senha de acesso</p>
+                            <div class="d-flex justify-content-between align-items-center">
+                                <a href="#" class="w-100 btn btn-lg botaoEntrar">Redefinir Senha</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col">
+                    <div class="card shadow-sm">
+                        <div class="card-body">
+                            <h5 class="card-text text-center">Realizar logoff</p>
+                            <div class="d-flex justify-content-between align-items-center">
+                                <a href="/Index" class="w-100 btn btn-lg botaoLogoff">Sair do Sistema</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</main>
