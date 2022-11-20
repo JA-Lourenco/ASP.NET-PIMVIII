@@ -6,4 +6,11 @@
     <ImplicitUsings>enable</ImplicitUsings>
   </PropertyGroup>
 
+  <ItemGroup>
+    <None Include="wwwroot\source\images\telemedicinaLogo-removebg.png" />
+    <None Include="wwwroot\source\images\telemedicinaLogo-removebg.svg" />
+    <None Include="wwwroot\source\images\telemedicinaLogo.png" />
+    <None Include="wwwroot\source\images\telemedicinaLogo.svg" />
+  </ItemGroup>
+
 </Project>
