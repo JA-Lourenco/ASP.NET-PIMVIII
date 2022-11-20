@@ -56,10 +56,6 @@ body {
     color: var(--blue);
 }
 
-.navBarP:hover {
-    color: var(--black);
-}
-
 .bgConsulta {
     background-color: var(--lightBlue);
     border: 3px solid var(--blue);

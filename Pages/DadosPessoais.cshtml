@@ -4,120 +4,123 @@
     ViewData["Title"] = "Dados Pessoais";
 }
 
-    <header class="d-flex flex-wrap align-items-center justify-content-center justify-content-md-between py-3 mb-4 border-bottom">
-        <div class="text-center">
-            <img src="../source/images/telemedicinaLogo-removebg.png" asp-append-version="true" alt="logo" width="100" height="100">
-        </div>
+<header class="d-flex flex-wrap align-items-center justify-content-center justify-content-md-between py-3 mb-4 border-bottom">
+    <div class="text-center">
+        <img src="../source/images/telemedicinaLogo-removebg.png" asp-append-version="true" alt="logo" width="100" height="100">
+    </div>
 
-        <ul class="nav col-12 col-md-auto mb-2 justify-content-center mb-md-0">
-            <li class="ms-lg-5 navBarLi">
-                <a href="/Home" class="nav-link">
+    <ul class="nav col-12 col-md-auto mb-2 justify-content-center mb-md-0">
+        <li class="ms-lg-5 navBarLi">
+            <a href="/Home" class="nav-link d-flex align-items-center">
+                <img src="../source/images/homeBar-removebg.png" asp-append-version="true" class="me-3" alt="homeLogo" width="30" height="30">
                 <p class="m-0 navBarP">Início</p>
-                </a>
-                </li>
-            <li class="ms-lg-5 navBarLi">
-                <a href="/Agendamento" class="nav-link">
+            </a>
+        </li>
+        <li class="ms-lg-5 navBarLi">
+            <a href="/Agendamento" class="nav-link d-flex align-items-center">
+                <img src="../source/images/agendarBar-removebg.png" asp-append-version="true" class="me-3" alt="agendarLogo" width="30" height="30">
                 <p class="m-0 navBarP">Agendar</p>
-                </a>
-            </li>
-            <li class="ms-lg-5 navBarLi">
-                <a href="/Perfil" class="nav-link">
+            </a>
+        </li>
+        <li class="ms-lg-5 navBarLi">
+            <a href="/Perfil" class="nav-link d-flex align-items-center">
+                <img src="../source/images/perfilBar-removebg.png" asp-append-version="true" class="me-3" alt="perfilLogo" width="30" height="30">
                 <p class="m-0 navBarP">Perfil</p>
-                </a>
-            </li>
-        </ul>
-    </header>
-    <main class="">
-        <div class="text-center">
-            <h1 style="color:var(--blue);">Dados Pessoais</h1>
+            </a>
+        </li>
+    </ul>
+</header>
+<main class="">
+    <div class="text-center">
+        <h1 style="color:var(--blue);">Dados Pessoais</h1>
+    </div>
+    <form action="/Perfil" class="d-flex flex-column align-items-center card-body-content">
+        <div class="row bgConsulta w-50 p-3 mt-2">
+            <label class="col-6">Nome Completo
+                <input class="form-control" type="text" placeholder="Insira o seu nome completo" />
+            </label>
+                
+            <label class="col-6">CPF
+                <input class="form-control" type="text" placeholder="___.___.___-__" />
+            </label>
         </div>
-        <form action="/Perfil" class="d-flex flex-column align-items-center card-body-content">
-            <div class="row bgConsulta w-50 p-3 mt-2">
-                <label class="col-6">Nome Completo
-                    <input class="form-control" type="text" placeholder="Insira o seu nome completo" />
-                </label>
+
+        <div class="row bgConsulta w-50 p-3 mt-2">
+            <label class="col-12">Logradouro
+                <input class="form-control w-100" type="text" placeholder="Ex: Rua das Oliveiras..." />
+            </label>
                 
-                <label class="col-6">CPF
-                    <input class="form-control" type="text" placeholder="___.___.___-__" />
-                </label>
-            </div>
+            <label class="col-8 mt-2">Bairro
+                <input class="form-control" type="text" placeholder="" />
+            </label>
 
-            <div class="row bgConsulta w-50 p-3 mt-2">
-                <label class="col-12">Logradouro
-                    <input class="form-control w-100" type="text" placeholder="Ex: Rua das Oliveiras..." />
-                </label>
-                
-                <label class="col-8 mt-2">Bairro
-                    <input class="form-control" type="text" placeholder="" />
-                </label>
+            <label class="col-4 mt-2">Número
+                <input class="form-control" type="number" placeholder="" />
+            </label>
 
-                <label class="col-4 mt-2">Número
-                    <input class="form-control" type="number" placeholder="" />
-                </label>
+            <label class="col-6 mt-2">Cidade
+                <input class="form-control" type="text" placeholder="" />
+            </label>
 
-                <label class="col-6 mt-2">Cidade
-                    <input class="form-control" type="text" placeholder="" />
-                </label>
+            <label class="col-6 mt-2">Estado
+                <select class="form-select">
+                    <option disabled selected>Selecione o estado</option>
+                    <option value="AC">Acre</option>
+                    <option value="AL">Alagoas</option>
+                    <option value="AP">Amapá</option>
+                    <option value="AM">Amazonas</option>
+                    <option value="BA">Bahia</option>
+                    <option value="CE">Ceará</option>
+                    <option value="DF">Distrito Federal</option>
+                    <option value="ES">Espírito Santo</option>
+                    <option value="GO">Goiás</option>
+                    <option value="MA">Maranhão</option>
+                    <option value="MT">Mato Grosso</option>
+                    <option value="MS">Mato Grosso do Sul</option>
+                    <option value="MG">Minas Gerais</option>
+                    <option value="PA">Pará</option>
+                    <option value="PB">Paraíba</option>
+                    <option value="PR">Paraná</option>
+                    <option value="PE">Pernambuco</option>
+                    <option value="PI">Piauí</option>
+                    <option value="RJ">Rio de Janeiro</option>
+                    <option value="RN">Rio Grande do Norte</option>
+                    <option value="RS">Rio Grande do Sul</option>
+                    <option value="RO">Rondônia</option>
+                    <option value="RR">Roraima</option>
+                    <option value="SC">Santa Catarina</option>
+                    <option value="SP">São Paulo</option>
+                    <option value="SE">Sergipe</option>
+                    <option value="TO">Tocantins</option>
+                    <option value="EX">Estrangeiro</option>
+                </select>
+            </label>
 
-                <label class="col-6 mt-2">Estado
-                    <select class="form-select">
-                        <option disabled selected>Selecione o estado</option>
-                        <option value="AC">Acre</option>
-                        <option value="AL">Alagoas</option>
-                        <option value="AP">Amapá</option>
-                        <option value="AM">Amazonas</option>
-                        <option value="BA">Bahia</option>
-                        <option value="CE">Ceará</option>
-                        <option value="DF">Distrito Federal</option>
-                        <option value="ES">Espírito Santo</option>
-                        <option value="GO">Goiás</option>
-                        <option value="MA">Maranhão</option>
-                        <option value="MT">Mato Grosso</option>
-                        <option value="MS">Mato Grosso do Sul</option>
-                        <option value="MG">Minas Gerais</option>
-                        <option value="PA">Pará</option>
-                        <option value="PB">Paraíba</option>
-                        <option value="PR">Paraná</option>
-                        <option value="PE">Pernambuco</option>
-                        <option value="PI">Piauí</option>
-                        <option value="RJ">Rio de Janeiro</option>
-                        <option value="RN">Rio Grande do Norte</option>
-                        <option value="RS">Rio Grande do Sul</option>
-                        <option value="RO">Rondônia</option>
-                        <option value="RR">Roraima</option>
-                        <option value="SC">Santa Catarina</option>
-                        <option value="SP">São Paulo</option>
-                        <option value="SE">Sergipe</option>
-                        <option value="TO">Tocantins</option>
-                        <option value="EX">Estrangeiro</option>
-                    </select>
-                </label>
+            <label class="col-4 mt-2">CEP
+                <input class="form-control" type="number" placeholder="_____-___" />
+            </label>
+        </div>
 
-                <label class="col-4 mt-2">CEP
-                    <input class="form-control" type="number" placeholder="_____-___" />
-                </label>
-            </div>
+        <div class="row bgConsulta w-50 p-3 mt-2">
+            <label class="col-4">DDD
+                <input class="form-control" type="number" placeholder="DDD" />
+            </label>
 
-            <div class="row bgConsulta w-50 p-3 mt-2">
-                <label class="col-4">DDD
-                    <input class="form-control" type="number" placeholder="DDD" />
-                </label>
+            <label class="col-4">Número de Telefone
+            <input class="form-control" type="text" placeholder="_____-____" />
+            </label>
 
-                <label class="col-4">Número de Telefone
-                <input class="form-control" type="text" placeholder="_____-____" />
-                </label>
-
-                <label class="col-4">Tipo
-                    <select class="form-select" type="text">
-                        <option disabled selected>Tipo de contato</option>
-                        <option>Comercial</option>
-                        <option>Residencial</option>
-                        <option>Celular</option>
-                    </select>
-                </label>
-            </div>
-            <button class="btn btn-lg w-50 m-4 botaoEntrar" type="submit">
-                Salvar Dados
-            </button>
-        </form>
-    </main>
+            <label class="col-4">Tipo
+                <select class="form-select" type="text">
+                    <option disabled selected>Tipo de contato</option>
+                    <option>Comercial</option>
+                    <option>Residencial</option>
+                    <option>Celular</option>
+                </select>
+            </label>
+        </div>
+        <button class="btn btn-lg w-50 m-4 botaoEntrar" type="submit">
+            Salvar Dados
+        </button>
+    </form>
+</main>
