@@ -1,35 +1,35 @@
 ﻿@page
-@model PerfilModel
+@model MedicoPerfilModel
 @{
     ViewData["Title"] = "Meu Perfil";
 }
 
-    <header class="d-flex flex-wrap align-items-center justify-content-center justify-content-md-between py-3 mb-4 border-bottom">
-        <div class="text-center">
-            <img src="../source/images/telemedicinaLogo-removebg.png" asp-append-version="true" alt="logo" width="100" height="100">
-        </div>
+<header class="d-flex flex-wrap align-items-center justify-content-center justify-content-md-between py-3 mb-4 border-bottom">
+    <div class="text-center">
+        <img src="../source/images/telemedicinaLogo-removebg.png" asp-append-version="true" alt="logo" width="100" height="100">
+    </div>
 
-        <ul class="nav col-12 col-md-auto mb-2 justify-content-center mb-md-0">
-            <li class="ms-lg-5 navBarLi">
-                <a href="/Home" class="nav-link">
+    <ul class="nav col-12 col-md-auto mb-2 justify-content-center mb-md-0">
+        <li class="ms-lg-5 navBarLi">
+            <a href="/MedicoPages/MedicoHome" class="nav-link">
                 <p class="m-0 navBarP">Início</p>
-                </a>
-                </li>
-            <li class="ms-lg-5 navBarLi">
-                <a href="/Agendamento" class="nav-link">
-                <p class="m-0 navBarP">Agendar</p>
-                </a>
-            </li>
-            <li class="ms-lg-5 navBarLi">
-                <a href="/Perfil" class="nav-link">
+            </a>
+        </li>
+        <li class="ms-lg-5 navBarLi">
+            <a href="/MedicoPages/MedicoAgenda" class="nav-link">
+                <p class="m-0 navBarP">Agenda</p>
+            </a>
+        </li>
+        <li class="ms-lg-5 navBarLi">
+            <a href="/MedicoPages/MedicoPerfil" class="nav-link">
                 <p class="m-0 navBarP">Perfil</p>
-                </a>
-            </li>
-        </ul>
-    </header>
+            </a>
+        </li>
+    </ul>
+</header>
 <main>
     <div class="album">
-        <h1 class="text-center mb-5">Paciente Teste Júnior</h1>
+        <h1 class="text-center mb-5">Doutor Testando Um</h1>
         <div class="container">
             <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 g-3">
                 <div class="col">
@@ -49,6 +49,17 @@
                             <h5 class="card-text text-center">Visualizar histórico de atendimentos</h5>
                             <div class="d-flex justify-content-between align-items-center">
                                 <a href="#" class="w-100 btn btn-lg botaoEntrar">Histórico de Atendimentos</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col">
+                    <div class="card shadow-sm">
+                        <div class="card-body">
+                            <h5 class="card-text text-center">Gerenciar estabelecimento do perfil</h5>
+                            <div class="d-flex justify-content-between align-items-center">
+                                <a href="#" class="w-100 btn btn-lg botaoEntrar">Trocar Estabelecimento</a>
                             </div>
                         </div>
                     </div>

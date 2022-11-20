@@ -1,0 +1,85 @@
+﻿@page
+@model MedicoHomeModel
+@{
+    ViewData["Title"] = "Início";
+}
+
+    <header class="d-flex flex-wrap align-items-center justify-content-center justify-content-md-between py-3 mb-4 border-bottom">
+        <div class="text-center">
+            <img src="../source/images/telemedicinaLogo-removebg.png" asp-append-version="true" alt="logo" width="100" height="100">
+        </div>
+
+        <ul class="nav col-12 col-md-auto mb-2 justify-content-center mb-md-0">
+            <li class="ms-lg-5 navBarLi">
+                <a href="/MedicoPages/MedicoHome" class="nav-link">
+                <p class="m-0 navBarP">Início</p>
+                </a>
+                </li>
+            <li class="ms-lg-5 navBarLi">
+                <a href="/MedicoPages/MedicoAgenda" class="nav-link">
+                <p class="m-0 navBarP">Agenda</p>
+                </a>
+            </li>
+            <li class="ms-lg-5 navBarLi">
+                <a href="/MedicoPages/MedicoPerfil" class="nav-link">
+                <p class="m-0 navBarP">Perfil</p>
+                </a>
+            </li>
+        </ul>
+    </header>
+    <main>
+        <div class="row d-flex align-items-center justify-content-around">
+            <h1 class="col w-50" style="color:var(--blue);">Bem Vindo(a) Dr(a)</h1>
+            <a href="/MedicoPages/MedicoAgenda" class="col-4">
+                <span class="btn btn-lg w-100 botaoEntrar">
+                    Visualizar Agenda
+                </span>
+            </a>
+        </div>
+
+        <div class="row bgConsulta mt-5 d-flex flex-wrap">
+            <h3 class="text-center" style="color:var(--blue);">Agenda de Hoje</h3>
+            <div class="col border p-2 m-2 cartaoConsulta">
+                <div>
+                    <p class="fw-bold">Data e Hora: 22/11/2022 às 14h15</p>
+                    <p>Médico(a): Doutor Testando Um</p>
+                    <p>CRM: 8888</p>
+                    <p>Especialidade: Infectologia</p>
+                    <p>Paciente: Paciente Teste Júnior</p>
+                </div>
+                <a href="/Consulta">
+                    <span class="btn btn-lg w-100 botaoEntrar">
+                        Iniciar Atendimento
+                    </span>
+                </a>
+            </div>
+            <div class="col border p-2 m-2 cartaoConsulta">
+                <div>
+                    <p class="fw-bold">Data e Hora: 22/11/2022 às 15h00</p>
+                    <p>Médico(a): Doutor Testando Um</p>
+                    <p>CRM: 8888</p>
+                    <p>Especialidade: Infectologia</p>
+                    <p>Paciente: Paciente Teste Júnior</p>
+                </div>
+                <a href="/Consulta">
+                    <span class="btn btn-lg w-100 botaoEntrar">
+                        Iniciar Atendimento
+                    </span>
+                </a>
+            </div>
+            <div class="col border p-2 m-2 cartaoConsulta">
+                <div>
+                    <p class="fw-bold">Data e Hora: 22/11/2022 às 16h00</p>
+                    <p>Médico(a): Doutor Testando Um</p>
+                    <p>CRM: 8888</p>
+                    <p>Especialidade: Clínico Geral</p>
+                    <p>Paciente: Paciente Teste de Souza</p>
+                </div>
+                <a href="/Consulta">
+                    <span class="btn btn-lg w-100 botaoEntrar">
+                        Iniciar Atendimento
+                    </span>
+                </a>
+            </div>
+        </div>
+    </main>
